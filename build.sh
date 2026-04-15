@@ -34,10 +34,10 @@ cat > combined_site/index.html <<EOL
 <html>
 <head>
   <meta http-equiv="refresh" content="0; url='app/'" />
-  <title>Vector Institute AI Engineering</title>
+  <title>Konbit Agro AI Assistant</title>
 </head>
 <body>
-  <p>Redirecting to <a href="app/">Vector AI Engineering Template</a></p>
+  <p>Redirecting to <a href="app/">Konbit Agro AI Assistant</a></p>
 </body>
 </html>
 EOL
@@ -48,10 +48,10 @@ cat > combined_site/to_app.html <<EOL
 <html>
 <head>
   <meta http-equiv="refresh" content="0; url='app/'" />
-  <title>Vector Institute AI Engineering</title>
+  <title>Konbit Agro AI Assistant</title>
 </head>
 <body>
-  <p>Redirecting to <a href="app/">Vector AI Engineering Template</a></p>
+  <p>Redirecting to <a href="app/">Konbit Agro AI Assistant</a></p>
 </body>
 </html>
 EOL

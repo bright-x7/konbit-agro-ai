@@ -1,16 +1,21 @@
 <div class="md-copyright">
-  <div class="md-footer-vector">
-    <a href="https://vectorinstitute.ai" target="_blank" rel="noopener">
+  <div class="md-footer-konbit">
+    <a href="/" title="Konbit Agro AI">
       <img
         src="{{ config.theme.logo_footer | url }}"
-        alt="Vector Institute Logo"
+        alt="Konbit Agro Logo"
         height="24"
       />
     </a>
   </div>
+  
   {% if config.copyright %}
   <div class="md-copyright__highlight">{{ config.copyright }}</div>
-  {% endif %} {% if not config.extra.generator == false %} Made with
+  {% else %}
+  <div class="md-copyright__highlight">© 2026 Konbit Agro AI - Tout dwa rezève</div>
+  {% endif %} 
+
+  {% if not config.extra.generator == false %} Pwovize pa 
   <a
     href="https://squidfunk.github.io/mkdocs-material/"
     target="_blank"

@@ -1,13 +1,13 @@
-# AI Engineering MVP Template Preview
+# Konbit Agro AI - Aperçu Interface
 
 <div class="admonition note">
-  <p class="admonition-title">Interactive Preview</p>
-  <p>This page embeds the Vector Institute UI template. Click the button below to view the template UI.</p>
+  <p class="admonition-title">Preview Interactif</p>
+  <p>Paj sa a pèmèt ou wè modèl interface Konbit Agro AI a. Klike sou bouton anba a pou louvri l.</p>
 </div>
 
 <div style="text-align: center; margin: 30px 0;">
-  <a href="javascript:openTemplateUI()" class="md-button md-button--primary" style="background-color: #eb088a; color: white;">
-    Open Template UI
+  <a href="javascript:openTemplateUI()" class="md-button md-button--primary" style="background-color: #10B981; color: white;">
+    Louvri Interface la
   </a>
 </div>
 
@@ -15,38 +15,30 @@
 
 <script>
 function openTemplateUI() {
-  // Get base URL - construct path to the template UI
   const baseUrl = window.location.origin + window.location.pathname.split('/').slice(0, -2).join('/');
-  // Create template URL relative to the current page
   const templateUrl = baseUrl + '/assets/template-ui/';
 
-  // Make iframe taller for better visibility
   document.getElementById('template-preview').style.height = '700px';
-
-  // Option 1: Open in iframe
   document.getElementById('template-preview').src = templateUrl;
   document.getElementById('template-preview').style.display = 'block';
-
-  // Option 2: Open in new tab
-  // window.open(templateUrl, '_blank');
 }
 </script>
 
-## About the Template UI
+## Konsènan Interface la
 
-The AI Engineering MVP Template provides a clean, simple interface that adheres to Vector's branding guidelines:
+Konbit Agro AI bay yon interface ki senp epi ki pwòp, ki respekte prensip konsepsyon nou yo:
 
-- **Brand Colors**: Incorporates Vector's signature pink (#eb088a) and purple (#8a08eb)
-- **Clean Design**: Minimalist interface with Vector branding
-- **Responsive Layout**: Adapts to various screen sizes and devices
+- **Koulè Idantite**: Nou itilize vèt emerald (#10B981) ak vèt fonse (#064E3B) ki raple lanati.
+- **Design Minimaliste**: Yon interface ki klè ki mete aksan sou done agrikòl yo.
+- **Adaptabilite (Responsive)**: Li mache byen sou telefòn, tablèt, ak òdinatè (Chromebook).
 
-### How to Use
+### Kijan pou w sèvi avè l
 
-To use this template in your project:
+Pou itilize modèl sa a nan pwojè w la:
 
-1. Clone the repository
-2. Navigate to the `frontend` directory
-3. Install dependencies with `npm install`
-4. Start the development server with `npm run dev`
+1. Clone repository a sou GitHub
+2. Antre nan dosye `frontend` la
+3. Enstale depandans yo ak `npm install`
+4. Lanse sèvè devlopman an ak `npm run dev`
 
-For more details, see the [Frontend Development](frontend-development.md) documentation.
+Pou plis detay, gade dokimantasyon [Frontend Development](frontend-development.md).

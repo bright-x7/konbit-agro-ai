@@ -1,27 +1,28 @@
-[data-md-color-primary="vector"] {
-  --md-primary-fg-color: #eb088a;
-  --md-primary-fg-color--light: #f252a5;
-  --md-primary-fg-color--dark: #b00068;
+/* Nou chanje idantite vizyèl la pou Konbit Agro */
+[data-md-color-primary="konbit"] {
+  --md-primary-fg-color: #10B981; /* Vèt Emerald nou an */
+  --md-primary-fg-color--light: #34D399;
+  --md-primary-fg-color--dark: #059669;
   --md-primary-bg-color: hsla(0, 0%, 100%, 1);
   --md-primary-bg-color--light: hsla(0, 0%, 100%, 0.7);
 }
 
 [data-md-color-primary="black"] {
   --md-primary-fg-color: #181818;
-  --md-primary-fg-color--light: #f252a5;
-  --md-primary-fg-color--dark: #b00068;
-  --md-primary-bg-color: #eb088a;
+  --md-primary-fg-color--light: #10B981;
+  --md-primary-fg-color--dark: #059669;
+  --md-primary-bg-color: #10B981;
 }
 
-[data-md-color-accent="vector-teal"] {
-  --md-accent-fg-color: #48c0d9;
-  --md-accent-fg-color--transparent: #526cfe1a;
+[data-md-color-accent="konbit-green"] {
+  --md-accent-fg-color: #059669;
+  --md-accent-fg-color--transparent: rgba(16, 185, 129, 0.1);
   --md-accent-bg-color: #fff;
   --md-accent-bg-color--light: #ffffffb3;
 }
 
 [data-md-color-scheme="slate"][data-md-color-primary="black"] {
-  --md-typeset-a-color: #eb088a;
+  --md-typeset-a-color: #10B981;
 }
 
 [data-md-color-scheme="default"] {
@@ -29,36 +30,36 @@
 }
 
 [data-md-color-scheme="slate"] {
-  --md-typeset-a-color: #eb088a;
+  --md-typeset-a-color: #10B981;
   /* Dark mode styling */
 }
 
-/* Vector logo css styling to match overrides/partial/copyright.html */
-.md-footer-vector {
+/* Konbit logo css styling pou footer a */
+.md-footer-konbit {
   display: flex;
   align-items: center;
   padding: 0 0.6rem;
 }
 
-.md-footer-vector img {
-  height: 24px; /* Reduce height to a fixed value */
-  width: auto; /* Maintain aspect ratio */
+.md-footer-konbit img {
+  height: 24px;
+  width: auto;
   transition: opacity 0.25s;
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
-.md-footer-vector img:hover {
+.md-footer-konbit img:hover {
   opacity: 1;
 }
 
-/* Make the inner footer grid elements distribute evenly */
+/* Distribisyon eleman nan footer a */
 .md-footer-meta__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* To make socials and Vector logo not stack when viewing on mobile */
+/* Kontwòl pou mobil pou logo ak rezo sosyal yo pa pile sou lòt */
 @media screen and (max-width: 76.234375em) {
   .md-footer-meta__inner.md-grid {
     flex-direction: row;
@@ -72,20 +73,18 @@
     max-width: 49%;
   }
 
-  /* Prevent margin that causes stacking */
   .md-social {
     margin: 0;
   }
 }
 
-/* Reduce margins for h2 when using grid cards */
 .grid.cards h2 {
-  margin-top: 0; /* Remove top margin completely in cards */
-  margin-bottom: 0.5rem; /* Smaller bottom margin in cards */
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
-.vector-icon {
-  color: #eb088a;
-  opacity: 0.7;
+.konbit-icon {
+  color: #10B981;
+  opacity: 0.8;
   margin-right: 0.2em;
 }

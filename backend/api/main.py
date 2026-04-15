@@ -20,45 +20,40 @@ settings = Settings()
 
 # Create the FastAPI app
 app = FastAPI(
-    title="MVP API",
-    description="API for MVP application",
+    title="Konbit Agro AI API", # Mise à jour du nom du projet
+    description="Cerveau IA pour l'assistance agricole intelligente",
     version="0.1.0",
 )
 
-# Add CORS middleware
+# Configuration précise du CORS pour ton environnement Next.js
+# On autorise spécifiquement localhost:3000 qui est le port par défaut de ton front
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,  # On remplace "*" par tes origines spécifiques
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Include API router
+# Include API router (C'est ici que passent tes requêtes d'auth et d'IA)
 app.include_router(api_router)
 
 
 @app.get("/")
 async def root() -> Dict[str, str]:
-    """Root endpoint of the API.
-
-    Returns
-    -------
-    Dict[str, str]
-        A welcome message for the API.
-    """
-    return {"message": "Welcome to the MVP API"}
+    """Root endpoint of the API."""
+    return {
+        "project": "Konbit Agro AI",
+        "message": "Le cerveau IA est en ligne et prêt à analyser vos cultures."
+    }
 
 
 @app.get("/healthcheck")
 async def healthcheck() -> Dict[str, str]:
-    """Health check endpoint.
-
-    This endpoint can be used to verify that the API is running and responsive.
-
-    Returns
-    -------
-    Dict[str, str]
-        A dictionary indicating the health status of the API.
-    """
-    return {"status": "healthy"}
+    """Vérifie que l'API est active."""
+    return {"status": "healthy", "service": "agro-brain-v1"}
