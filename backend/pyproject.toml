@@ -41,7 +41,7 @@ docs = [
     "ipykernel>=6.29.5",
     "ipython>=8.31.0",
     "mkdocs-include-markdown-plugin>=7.0.0",
-    "pymdown-extensions>=10.0.0",
+    "pymdown-extensions>=10.21.2",
 ]
 
 # Default dependency groups to be installed
